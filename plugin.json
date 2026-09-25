@@ -32,10 +32,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."
   },
   "platforms": [
-    "Linux"
+    "Linux","Darwin"
   ],
   "installinstructions": {
     "Linux": "No additional installation steps required."
+    "Darwin": "No additional installation steps required."
   },
   "dependencies": {},
   "version": "0.1.0",
