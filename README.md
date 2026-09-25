@@ -9,3 +9,5 @@ I also want to port it to C++ later so it runs much faster.
 I started with Python so I can keep learning with Python, since I've never really coded in high-level programming languages before.
 
 Please don't use version 0.1.0 for commercial work. It is only a \"beta\" right now.
+
+I will keep updating it for a long time. This is one of my main Binja plugins I wanted to make (another one could be coming, but then give me some time ;-) ).
