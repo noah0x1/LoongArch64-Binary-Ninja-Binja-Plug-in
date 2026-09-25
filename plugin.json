@@ -22,7 +22,7 @@
     "Darwin": "No additional installation steps required."
   },
   "dependencies": {},
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Noah1",
   "minimumbinaryninjaversion": 10601
 }
