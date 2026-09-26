@@ -1,7 +1,7 @@
 from binaryninja import (Architecture, RegisterInfo, InstructionInfo, InstructionTextToken,
                          IntrinsicInfo, Type, CallingConvention, Platform, BinaryViewType,
                          PluginCommand)
-from binaryninja.enums import InstructionTextTokenType, BranchType, Endianness
+from binaryninja.enums import InstructionTextTokenType, BranchType, Endianness #text
 from binaryninja.log import log_info, log_error
 
 from . import ladis, la64il, plt
