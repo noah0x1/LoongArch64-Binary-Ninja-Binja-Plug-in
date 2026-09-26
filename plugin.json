@@ -5,7 +5,7 @@
     "architecture"
   ],
   "api": [
-    "cpp"
+    "python3"
   ],
   "description": "Native LoongArch64 architecture plugin with disassembly, LLIL lifting and PLT naming (C and x86-64 assembly).",
   "longdescription": "",
@@ -17,7 +17,7 @@
     "Linux"
   ],
   "installinstructions": {
-    "Linux": "Requires Linux on x86-64 with gcc (or clang), make and curl. Remove or disable the Python version of this plugin first, both register an architecture named `LoongArch64`.\n\n1. Clone this repository and `cd` into it.\n2. Build: `make BN_INSTALL=/path/to/binaryninja` (the directory containing `libbinaryninjacore.so.1`, default `~/binaryninja`). This downloads the `binaryninjacore.h` matching your Binary Ninja version.\n3. Install: `make install BN_INSTALL=/path/to/binaryninja`\n4. Restart Binary Ninja. The log shows `LoongArch64 architecture loaded (2031 opcodes)`.\n\nAfter updating Binary Ninja, rebuild with `make clean header all install BN_INSTALL=/path/to/binaryninja`."
+    "Linux": "Nothing to build: the plugin contains prebuilt native binaries for Binary Ninja 5.2, 5.3 and 6.0 on Linux x86-64 and loads the one matching your version automatically. If another LoongArch64 plugin is installed, disable it first, both register an architecture named `LoongArch64`.\n\nFor other Binary Ninja versions, build the plugin from source with `make` and `make install`."
   },
   "dependencies": {
     "pip": [],

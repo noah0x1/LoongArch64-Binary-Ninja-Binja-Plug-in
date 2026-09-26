@@ -16,7 +16,7 @@ OBJ    := $(patsubst src/%,build/%.o,$(SRC))
 TARGET := build/libarch_la64.so
 HDRS   := include/la64.h include/la64_bn.h $(BN_API)/binaryninjacore.h
 
-.PHONY: all install uninstall header clean distclean
+.PHONY: all install uninstall header prebuilt clean distclean
 
 all: $(TARGET)
 
@@ -59,6 +59,9 @@ install: $(TARGET)
 
 uninstall:
 	rm -f "$(PLUGIN_DIR)/libarch_la64.so"
+
+prebuilt:
+	sh tools/build_prebuilt.sh
 
 clean:
 	rm -rf build

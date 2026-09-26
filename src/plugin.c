@@ -40,8 +40,12 @@ BINARYNINJAPLUGIN void CorePluginDependencies(void)
 	BNAddOptionalPluginDependency("view_elf");
 }
 
+static bool g_initialized;
+
 BINARYNINJAPLUGIN bool CorePluginInit(void)
 {
+	if (g_initialized)
+		return true;
 	if (!la_init() || !la_lift_init()) {
 		BNLogError("LoongArch64: could not build opcode tables");
 		return false;
@@ -92,5 +96,6 @@ BINARYNINJAPLUGIN bool CorePluginInit(void)
 	BNRegisterBinaryViewEvent(BinaryViewFinalizationEvent, name_plt, NULL);
 
 	BNLogInfo("LoongArch64 architecture loaded (%u opcodes)", la_opcode_count);
+	g_initialized = true;
 	return true;
 }
