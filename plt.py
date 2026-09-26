@@ -10,7 +10,7 @@ R_LARCH_JUMP_SLOT = 5
 
 def _cstr(bv, addr, limit=256):
     raw = bv.read(addr, limit) or b''
-    return raw.split(b'\0', 1)[0].decode('utf-8', 'replace')
+    return raw.split(b'\0', 1)[0].decode('utf-8', 'replace') #text
 
 
 def _stub_got_slot(bv, addr):
